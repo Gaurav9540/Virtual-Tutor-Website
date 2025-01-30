@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AI E-Tutor</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <style>
+        .float
+        {
+		padding:10px;
+            position: fixed;
+            /*width: 130px;*/
+            height: 40px;
+            bottom: 140px;
+            right: 15px;
+            background-color: #844fc1;
+            color: #FFF;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 21px;
+            font-weight:700;
+                z-index: 9999999999;
+        }
+		.float1
+        {
+		padding:10px;
+            position: fixed;
+            /*width: 130px;*/
+            height: 40px;
+            bottom: 90px;
+            right: 15px;
+            background-color: #844fc1;
+            color: #FFF;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 21px;
+            font-weight:700;
+                z-index: 9999999999;
+        }
+        
+        .my-float
+        {
+            margin-top: 16px;
+        }
+		
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+
+        #videoBox {
+            width: 100%; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
+            margin: 20px;
+        }
+
+
+</style>
+</head>
+<body style="background:white;">
+  <a href="#"><p class="float">AI Chat Tutor </p></a>
+  <a href="#"><p class="float1">Quiz </p></a>
+
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand brand-logo" href="index.html"><span style="font-size:20px;color:white;font-weight:800">AI E-Tutor</span></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+          
+        </div>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-2">
+          
+          <label class="form-check-label" style="padding: 28px;font-size: 23px;font-weight: 800;">
+                     
+                    Welcome Yogesh
+                    </label>
+					<p style="padding-top: 17px;"> <button class="btn btn-danger btn-rounded mt-1" type="submit">Go To Bashboard</button></p>
+        </ul>
+        
+       <!--<marquee style="font-size: 25px;
+    font-weight: 700;
+    color: #2b0b50;">Get personalized learning experiences! Start your learning today with e-tutor !
+        Explore the e-learning material and get succed in all your academic assignment</marquee>-->
+      </div>
+	  <marquee style="font-size: 25px;
+    font-weight: 700;
+    color: #2b0b50;background: #fad75f;border-top: 4px solid #844fc1;">Get personalized learning experiences! Start your learning today with e-tutor !
+        Explore the e-learning material and get succed in all your academic assignment</marquee>
+    </nav>
+    <!-- partial -->
+    
+    <div class="container page-body-wrapper"  style="background: white;display: block; padding-top: 130px;">
+      
+      <div id="mainPage" style="display:block;">
+	  <footer class="footer" style="background: white;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="" style="font-size: 23px;font-weight: 800;">
+                      <center>  <span class="text-muted text-center text-sm-left">Select Your Class</span></center>
+                       
+                    </div>
+                </div>    
+            </div>    
+        </footer>
+        <div class="content-wrapper">
+          <div class="row">
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -V</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(5);"  style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			  
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -VI</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(6);" style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			  
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -VII</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(7);" style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			</div>  
+			
+			<div class="row">
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -VIII</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(8);" style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			  
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -IX</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(9);" style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			  
+			  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+				<div class="card newsletter-card bg-gradient-warning">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Class -X</h5>
+                        
+						<button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="getValueForNextPage(10);" style="border-radius: 10px;
+    font-size: 16px;">Select</button>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			</div>  
+           
+            
+          </div>
+
+         
+          
+        </div>
+		<div id="secondPage" style="display:none;">
+		  <footer class="footer" style="background: white;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="" style="font-size: 23px;font-weight: 800;">
+                      <center>  <span class="text-muted text-center text-sm-left">Select Your <span id="subjectValue"></span> Subject</span></center>
+                       
+                    </div>
+                </div>    
+            </div>    
+        </footer>
+		<div class="content-wrapper">
+			<div id="fithClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit" style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(51)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">EVS</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(52)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(53)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		
+			<div id="sixthClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(61)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(62)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(63)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social And Political Life</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(64)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				<div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;
+    font-size: 16px;" onclick="getMainPage(65)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		
+			<div id="seventhClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(71)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(72)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;
+							"onclick="getMainPage(73)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;" onclick="getMainPage(74)">
+								Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		
+		<div id="eighthClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(81)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"onclick="getMainPage(82)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"onclick="getMainPage(83)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"onclick="getMainPage(84)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		
+		<div id="ninethClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(91)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(92)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;"">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(93)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(94)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		
+		
+		<div id="tenthClass" style="display:none;">
+			  <div class="row">
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">English</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(101)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;"
+							>Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(102)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Mathematics</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(103)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">Social Science</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(104)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="col-md-4 col-xl-4 grid-margin stretch-card">
+					<div class="card newsletter-card bg-gradient-warning">
+						<div class="card-body">
+						  <div class="d-flex flex-column align-items-center justify-content-center h-100">
+							<h5 class="mb-12 text-white" style="padding-top: 17px;padding-bottom: 17px;font-size: 23px;">ICT</h5>
+							
+							<button class="btn btn-danger btn-rounded mt-1" type="submit"  style="border-radius: 10px;font-size: 16px;"
+							onclick="getMainPage(105)">Select</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
+			</div>
+		<br>
+		<p style="padding-top: 17px;"> <button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="goBack(1);">Go Back</button></p>
+		</div>
+		
+		
+		</div>
+		
+		<!-- partial -->
+      
+	  <div id="thirdPage" style="background: white;display: none;">
+	  
+			<footer class="footer" style="background: white;">
+            <div class="card">
+                <div class="card-body">
+                    <div class="" style="font-size: 23px;font-weight: 800;">
+                     <center><button class="btn btn-danger btn-rounded mt-1" type="submit" onclick="goBack(2);" style="float: inline-start;
+    padding: 8px;
+    border-radius: 7px;">Go Back</button>   <span class="text-muted text-center text-sm-left"> <span id="subjectTutor"></span> Tutorial</span></center>
+                        
+		
+                    </div>
+                </div>    
+            </div>    
+        </footer>
+		<div class="content-wrapper">
+          <div class="row">
+			  <div class="col-lg-3 col-md-3 col-sm-12 grid-margin stretch-card">
+				<div class="card newsletter-card">
+                      
+						<p style="padding: 13px; font-size:16px;" id="dvTable"></p>
+						
+                    
+                  </div>
+			  </div>
+			  
+			  <div class="col-lg-7 col-md-7 col-sm-12 grid-margin stretch-card">
+				<div class="card newsletter-card">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center">
+                        
+						<p>Introduction</p>
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			  <div class="col-lg-2 col-md-2 col-sm-12 grid-margin stretch-card">
+				<div class="card newsletter-card ">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-center">
+                   
+							<p id="videoBox"></p>
+						
+                      </div>
+                    </div>
+                  </div>
+			  </div>
+			 
+			  </div>
+			  </div>
+		
+        
+	  </div>
+     </div>
+	 
+	 <script>
+		function goBack(val)
+		{
+			if(val==1)
+			{
+
+			
+			document.getElementById('mainPage').style.display="block";
+			document.getElementById('secondPage').style.display="none";
+			document.getElementById('fithClass').style.display="none";
+			document.getElementById('sixthClass').style.display="none";
+			document.getElementById('seventhClass').style.display="none";
+			document.getElementById('eighthClass').style.display="none";
+			document.getElementById('ninethClass').style.display="none";
+			document.getElementById('tenthClass').style.display="none";
+			}
+			else{
+				document.getElementById('mainPage').style.display="none";
+			document.getElementById('secondPage').style.display="block";
+			document.getElementById('thirdPage').style.display="none";
+				}
+		}
+		   function getValueForNextPage(val)
+		   {
+		   
+			document.getElementById('mainPage').style.display="none";
+			 if(val===5)
+			 {
+			 
+				document.getElementById('subjectValue').innerHTML="Fifth Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('fithClass').style.display="block";
+			 }
+			  if(val===6)
+			 {
+			 
+			 document.getElementById('subjectValue').innerHTML="Sixth Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('sixthClass').style.display="block";
+			 }
+			 if(val===7)
+			 {
+			 
+			 document.getElementById('subjectValue').innerHTML="Seventh Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('seventhClass').style.display="block";
+			 }
+			 if(val===8)
+			 {
+			 
+			 document.getElementById('subjectValue').innerHTML="Eighth Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('eighthClass').style.display="block";
+			 }
+			 if(val===9)
+			 {
+			 
+			 document.getElementById('subjectValue').innerHTML="Nineth Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('ninethClass').style.display="block";
+			 }
+			 if(val===10)
+			 {
+			 
+				document.getElementById('subjectValue').innerHTML="Tenth Class"
+				document.getElementById('secondPage').style.display="block";
+				document.getElementById('tenthClass').style.display="block";
+			 }
+			 
+		   }
+		   
+		function getMainPage(val)
+		{
+			 var indexTitle = new Array();
+			 var videoTitle = new Array();
+			 var videoTitles ="";
+
+
+			document.getElementById('thirdPage').style.display="block";
+			document.getElementById('secondPage').style.display="none";
+		 	document.getElementById('mainPage').style.display="none";
+			if(val==51)
+			{
+ 				document.getElementById('subjectTutor').innerHTML="English";
+				
+				//Topics
+				 indexTitle.push(["English Tutorial"]);
+				 indexTitle.push(["1. Ice Cream Man"]);
+				 indexTitle.push(["2. Wonderful Waste!"]);
+				 indexTitle.push(["3. Teamwork"]);
+				 indexTitle.push(["4. Flying Together"]);
+				 indexTitle.push(["5. My Shadow"]);
+				 indexTitle.push(["6. Robinson Crusoe Discovers a Footprint."]);
+				 indexTitle.push(["7. Crying"]);
+				 indexTitle.push(["8. My Elder Brother"]);
+				 indexTitle.push(["9. The Lazy frog"]);
+				 indexTitle.push(["10. Rip Van Winkle"]);
+				 indexTitle.push(["11. Class Discussion"]);
+				 indexTitle.push(["12. The Talkative Barber"]);
+				 indexTitle.push(["13. Topsy-turvy Land"]);
+				 indexTitle.push(["14. Gulliver’s Travels"]);
+				 indexTitle.push(["15. Nobody’s Friend"]);
+				 indexTitle.push(["16. The Little Bully"]);
+				 indexTitle.push(["17. Sing a Song of People"]);
+				 indexTitle.push(["18. Malu-Bhalu"]);
+				 indexTitle.push(["19. Who will be Ningthou?"]);
+
+				//Videos
+				videoTitles = [
+				"https://www.youtube.com/watch?v=p4uakvlPugY&list=PLW6ZJtqCeoWvpx_5yvDm9D44FgKWCZHM7",
+				"https://www.youtube.com/watch?v=XLqge4YWLVE&list=PLAiWZQJmg9HlmP5sxjGJGYAgRh7XbZcH6",
+				"https://www.youtube.com/watch?v=ETc1bdM6-CM&list=PLVLoWQFkZbhUOY_a1-hgpQFc22MZ8Qqo1" ];
+
+			}
+			else if(val==52)
+			{
+				document.getElementById('subjectTutor').innerHTML="EVS";
+				indexTitle.push(["EVS Tutorial"]);
+				 indexTitle.push(["1. Super Senses"]);
+				 indexTitle.push(["2. A Snake Charmer’s Story"]);
+				 indexTitle.push(["3. From Tasting to Digesting"]);
+				 indexTitle.push(["4. Mangoes Round the Year"]);
+				 indexTitle.push(["5. Seeds and Seeds"]);
+				 indexTitle.push(["6. Every Drop Counts"]);
+				 indexTitle.push(["7. Experiments with Water"]);
+				 indexTitle.push(["8. A Treat for Mosquitoes"]);
+				 indexTitle.push(["9. Up You Go!"]);
+				 indexTitle.push(["10. Walls Tell Stories"]);
+				 indexTitle.push(["11. Sunita in Space"]);
+				 indexTitle.push(["12. What if it Finishes…?"]);
+				 indexTitle.push(["13. A Shelter so High!"]);
+				 indexTitle.push(["14. When the Earth Shook!"]);
+				 indexTitle.push(["15. Blow Hot, Blow Cold"]);
+				 indexTitle.push(["16. Who will do this Work?"]);
+				 indexTitle.push(["17. Across the Wall"]);
+				 indexTitle.push(["18. No Place for Us?"]);
+				 indexTitle.push(["19. Whose Forests?"]);
+				 indexTitle.push(["20. Like Father, Like Daughter"]);
+				 indexTitle.push(["21. On the Move Again"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=NFFyYPZ7too&list=PLVLoWQFkZbhVxyA3K-Ru0kuVTqhgqOJmO",
+				"https://www.youtube.com/watch?v=c-FDXPX14VM&list=PLSX2xDnAMD59PMm9z37eEaZ5HecCnKbL9",
+				"https://www.youtube.com/watch?v=b7iv8nQ6v40&list=PLJEDyRFt7tcJjlFAxghMJh87G4tuBR519"
+				 ];
+
+		}
+
+			else if(val==53)
+			{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. The fish tale"]);
+				 indexTitle.push(["2. Shapes and angles"]);
+				 indexTitle.push(["3. How many squares?"]);
+				 indexTitle.push(["4. Parts and wholes"]);
+				 indexTitle.push(["5. Does it look the same?"]);
+				 indexTitle.push(["6. Be my multiple, I'll be your factor"]);
+				 indexTitle.push(["7. Can you see the pattern?"]);
+				 indexTitle.push(["8. Mapping your way"]);
+				 indexTitle.push(["9. Boxes and sketches"]);
+				 indexTitle.push(["10. Tenths and hundredths"]);
+				 indexTitle.push(["11. Area and its boundary"]);
+				 indexTitle.push(["12. Smart Charts"]);
+				 indexTitle.push(["13. Ways to multiply and divide"]);
+				 indexTitle.push(["14. How big? How heavy??"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=ZaB52lph8gM&list=PLphp2vUkIiFIv8rv65S-1l3JlkBiD8QpI",
+				"https://www.youtube.com/watch?v=2tRPZsEeV5g&list=PLVLoWQFkZbhV0kPS6-8eWJw2GuBSSkjYD",
+				"https://www.youtube.com/watch?v=-8V7oiBusgw"
+				 ];
+			}
+
+			else if(val==61)
+			{
+				 document.getElementById('subjectTutor').innerHTML="English";
+				 indexTitle.push(["English Tutorial"]);
+
+				 indexTitle.push(["English Grammar Tutorial"]);
+				 indexTitle.push(["1. Noun"]);
+				 indexTitle.push(["2. Pronoun"]);
+				 indexTitle.push(["3. Verb"]);
+				 indexTitle.push(["4. Tenses"]);
+				 indexTitle.push(["5. Voice"]);
+				 indexTitle.push(["6. Adjective"]);
+				 indexTitle.push(["7. Adverb"]);
+				 indexTitle.push(["8. Sentence And Phrases"]);
+				 indexTitle.push(["9. Subject-verb agreement"]);
+				 indexTitle.push(["10. Reported speech"]);
+				 indexTitle.push(["11. Framing questions "]);
+				 indexTitle.push(["12. Prepositions"]);
+				 indexTitle.push(["13. Conjunction"]);
+				 indexTitle.push(["14. Punctuation"]);
+
+				 indexTitle.push(["Applied Grammar Tutorial"]);
+				 indexTitle.push(["1. Gap filling/ sentences"]);
+				 indexTitle.push(["2. Dialogues completion "]);
+				 indexTitle.push(["3. Sentence reordering "]);
+				 indexTitle.push(["4. Editing"]);
+				 indexTitle.push(["5. Omission"]);
+				 indexTitle.push(["6. Sentence Transformation"]);
+
+				 indexTitle.push(["Writing Sections Tutorial"]);
+				 indexTitle.push(["1. Formal Letter"]);
+				 indexTitle.push(["2. Informal Letter"]);
+				 indexTitle.push(["3. Dairy Entry"]);
+				 indexTitle.push(["4. Notice Writing"]);
+				 indexTitle.push(["5. Message Writing"]);
+				 indexTitle.push(["6. Debate"]);
+				 indexTitle.push(["7. Speech"]);
+				 indexTitle.push(["8. Article"]);
+				 indexTitle.push(["9. Report"]);
+				 indexTitle.push(["10. Story Completion"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=kghkSHTmLpc&list=PLVLoWQFkZbhWYCmKqzuzhnq57ENS7kgqO",
+				"https://www.youtube.com/watch?v=iuVibieyLug&list=PLVLoWQFkZbhWen6L_Ss8IqxJs_zUFgxa-",
+				"https://www.youtube.com/watch?v=ylr9kK98x5w" ];
+			}
+
+			else if(val==62)
+			{
+				 document.getElementById('subjectTutor').innerHTML="Science";
+				 indexTitle.push(["Science Tutorial"]);
+				 indexTitle.push(["1. Food: Where Does it Come from?"]);
+				 indexTitle.push(["2. Components of Food"]);
+				 indexTitle.push(["3. Fibre to Fabric"]);
+				 indexTitle.push(["4. Sorting Materials into Groups"]);
+				 indexTitle.push(["5. Separation of Substances"]);
+				 indexTitle.push(["6. Changes Around Us"]);
+				 indexTitle.push(["7. Getting to know Plants"]);
+				 indexTitle.push(["8. Body Movements"]);
+				 indexTitle.push(["9. The Living Organisms and their Surrounding"]);
+				 indexTitle.push(["10. Motion and Measurement of Distances"]);
+				 indexTitle.push(["11. Light, Shadows and Reflections"]);
+				 indexTitle.push(["12. Electricity and Circuits"]);
+				 indexTitle.push(["13. Fun with Magnets"]);
+				 indexTitle.push(["14. Water"]);
+				 indexTitle.push(["15. Air Around Us"]);
+				 indexTitle.push(["16. Garbage In, Garbage Out"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=qVHLNg61sy4",
+				"https://www.youtube.com/watch?v=F-SWD7y-iSA",
+				"https://www.youtube.com/watch?v=P5yKJXgGpxM",
+				"https://www.youtube.com/watch?v=2yN7m5-7NsY"
+			];
+
+			}
+
+			else if(val==63)
+			{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. Knowing Our Numbers"]);
+				 indexTitle.push(["2. Whole Numbers"]);
+				 indexTitle.push(["3. Playing with Numbers"]);
+				 indexTitle.push(["4. Basic Geometrical Ideas"]);
+				 indexTitle.push(["5. Understanding Elementary Shapes"]);
+				 indexTitle.push(["6. Integers"]);
+				 indexTitle.push(["7. Fractions"]);
+				 indexTitle.push(["8. Decimals"]);
+				 indexTitle.push(["9. Data Handling"]);
+				 indexTitle.push(["10. Mensuration"]);
+				 indexTitle.push(["11. Algebra"]);
+				 indexTitle.push(["12. Ratio And Proportion"]);
+				 indexTitle.push(["13. Symmetry"]);
+				 indexTitle.push(["14. Practical Geometry"]);
+				 
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=49D-VR1ohTc",
+				"https://www.youtube.com/watch?v=QnwyO9pWVGA",
+				"https://www.youtube.com/watch?v=9KnVbYq3uuw" ];
+
+			}
+
+			else if(val==64)
+			{
+				 document.getElementById('subjectTutor').innerHTML="Social And political Life";
+				 indexTitle.push(["Social And political Life Tutorial"]);
+				 indexTitle.push(["1. What, Where, How, and When?"]);
+				 indexTitle.push(["2. From Hunting-Gathering To Growing Food"]);
+				 indexTitle.push(["3. In The Earliest Cities"]);
+				 indexTitle.push(["4. What Books and Burials Tell Us"]);
+				 indexTitle.push(["5. Kingdoms, Kings and The Early Republic"]);
+				 indexTitle.push(["6. New Questions and Ideas"]);
+				 indexTitle.push(["7. Ashoka, The Emperor Who Gave Up War"]);
+				 indexTitle.push(["8. Vital Villages, Thriving Towns "]);
+				 indexTitle.push(["9. Traders, Kings, and Pilgrims"]);
+				 indexTitle.push(["10. New Empires and Kingdoms "]);
+				 indexTitle.push(["11. Buildings, Paintings, and Books"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=ioST9BF4AiA&list=PLVLoWQFkZbhWT-_7TqwagJkpO91DbwsxL",
+				"https://www.youtube.com/watch?v=l3lEeyTch_w"];
+
+			}
+
+			else if(val==65)
+			{
+				 document.getElementById('subjectTutor').innerHTML="Social Science";
+				 indexTitle.push(["Social Science Tutorial"]);
+				 indexTitle.push(["1. The Earth In The Solar System"]);
+				 indexTitle.push(["2. Globe - Latitudes and Longitudes"]);
+				 indexTitle.push(["3. Motion Of The Earth"]);
+				 indexTitle.push(["4. Maps"]);
+				 indexTitle.push(["5. Major Domains of The Earth"]);
+				 indexTitle.push(["6. Major Landforms of The Earth"]);
+				 indexTitle.push(["7. Our Country - India"]);
+				 indexTitle.push(["8. India - Climate, Vegetation, and Wildlife"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=vhlpxPV4c38",
+				"https://www.youtube.com/watch?v=tPOarkxW0Nw"
+				 ];
+
+			}
+
+			else if(val==71)
+			{
+				 document.getElementById('subjectTutor').innerHTML="English";
+				 indexTitle.push(["English Grammar Tutorial"]);
+				 indexTitle.push(["1. Articles"]);
+				 indexTitle.push(["2. Modals"]);
+				 indexTitle.push(["3. Sentence Structure"]);
+				 indexTitle.push(["4. Voice"]);
+				 indexTitle.push(["5. Gender(Noun)"]);
+				 indexTitle.push(["6. Kinds Of Adjective"]);
+				 indexTitle.push(["7. Verbs"]);
+				 indexTitle.push(["8. Adverbs"]);
+				 indexTitle.push(["9. Prepositions"]);
+				 indexTitle.push(["10. Conjunctions"]);
+				 indexTitle.push(["11. Interjections"]);
+				 indexTitle.push(["12. Reported Speech"]);
+				 indexTitle.push(["13. Tenses"]);
+				 indexTitle.push(["14. Determiners"]);
+				 indexTitle.push(["15. Conditional clause"]);
+				 indexTitle.push(["16. Idioms"]);
+				 indexTitle.push(["17. Word Meaning"]);
+				 indexTitle.push(["18. Word Building"]);
+				 indexTitle.push(["19. Arrange the Word"]);
+				 indexTitle.push(["20. Completing Paragraph"]);
+				 indexTitle.push(["21. Opposite words"]);
+				 indexTitle.push(["22. Plurals"]);
+				 indexTitle.push(["23. Question words"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=sTe-Prt8Uwc&list=PLVLoWQFkZbhUtRZO4cuJyDKv3VQogNVgZ",
+				"https://www.youtube.com/watch?v=N_I8p4mtb1I&list=PLgnbiIJ2vlFGdzk_LIV_zT25arKO3JCBj",
+				"https://www.youtube.com/watch?v=3Pa7kzr8rMM&list=PLMcg03c6dcGqDqvNeVCZBiQ8hiulOgu1c"
+				 ];
+				}
+
+				else if(val==72)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Science";
+				 indexTitle.push(["Science Tutorial"]);
+				 indexTitle.push(["1. Nutrition in Plants"]);
+				 indexTitle.push(["2. Nutrition in Animals"]);
+				 indexTitle.push(["3. Fibre to Fabric"]);
+				 indexTitle.push(["4. Heat"]);
+				 indexTitle.push(["5. Acids, Bases and Salts"]);
+				 indexTitle.push(["6. Physical and Chemical Changes"]);
+				 indexTitle.push(["7. Weather, climate and Adaptations of Animals to climate"]);
+				 indexTitle.push(["8. Winds, Storms and Cyclones"]);
+				 indexTitle.push(["9. Soil"]);
+				 indexTitle.push(["10. Respiration in Organisms"]);
+				 indexTitle.push(["11. Transportation in Animals and plants"]);
+				 indexTitle.push(["12. Reproduction in plants"]);
+				 indexTitle.push(["13. Motion and Time"]);
+				 indexTitle.push(["14. Electric Current and its Effects"]);
+				 indexTitle.push(["15. Light"]);
+				 indexTitle.push(["16. Water A Precious Resource"]);
+				 indexTitle.push(["17. Forest: Our Lifeline"]);
+				 indexTitle.push(["18. Wastewater Story"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=UFs-uCoKjbA&list=PLjm_mvBNlvBabTCNnGm1-knkNvGvDVVNp",
+				"https://www.youtube.com/watch?v=6WZDTtpva4c",
+				"https://www.youtube.com/watch?v=5M1x7eXwQ-k"
+				 ];
+			}
+
+			else if(val==73)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. Integers."]);
+				 indexTitle.push(["2. Fractions and Decimals."]);
+				 indexTitle.push(["3. Data Handling."]);
+				 indexTitle.push(["4. Simple Equations"]);
+				 indexTitle.push(["5. Lines and Angles"]);
+				 indexTitle.push(["6. The Triangles and Its Properties."]);
+				 indexTitle.push(["7. Congruence of Triangles."]);
+				 indexTitle.push(["8. Comparing Quantities"]);
+				 indexTitle.push(["9. Rational Numbers"]);
+				 indexTitle.push(["10. Practical Geometry."]);
+				 indexTitle.push(["11. Perimeter and Area."]);
+				 indexTitle.push(["12. Algebraic Expression."]);
+				 indexTitle.push(["13. Exponents and Powers"]);
+				 indexTitle.push(["14. Symmetry."]);
+				 indexTitle.push(["15. Visualising Solid Shapes"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=k_gKdsPU_WE&list=PLjm_mvBNlvBYWtFnVIE2pQCYthBQulEmO",
+				"https://www.youtube.com/watch?v=iEu2tKEkY_I&list=PLVLoWQFkZbhVgT5aM-GRuQHnzthwllEHq",
+				"https://www.youtube.com/watch?v=w-pCV3dLr7c&list=PL5aQFo5utHdfdWteCqv9uu2MVXx-l-M6O"
+				 ];
+				}
+
+				else if(val==74)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Social Science";
+				 indexTitle.push(["Social Science Tutorial"]);
+
+				 indexTitle.push(["History Tutorial"]);
+				 indexTitle.push(["1. Tracing Changes Through A Thousand years"]);
+				 indexTitle.push(["2. New Kings And kingdoms"]);
+				 indexTitle.push(["3. The Delhi Sultans"]);
+				 indexTitle.push(["4. The Mughal Empire"]);
+				 indexTitle.push(["5. Rulers and Buildings"]);
+				 indexTitle.push(["6. Towns, Traders, And Craftspersons"]);
+				 indexTitle.push(["7. Tribes, Nomads And Settled Communities"]);
+				 indexTitle.push(["8. Devotional Paths to the Divine"]);
+				 indexTitle.push(["9. The Making of Regional Cultures"]);
+				 indexTitle.push(["10. Eighteenth-Century Political Formations "]);
+
+				 indexTitle.push(["Civics Tutorial"]);
+				 indexTitle.push(["1. On Equality"]);
+				 indexTitle.push(["2. Role of the Government in Health"]);
+				 indexTitle.push(["3. How the State Government Works"]);
+				 indexTitle.push(["4. Growing up as Boys and Girls"]);
+				 indexTitle.push(["5. Women can Change the Wolrd"]);
+				 indexTitle.push(["6. Understanding Media"]);
+				 indexTitle.push(["7. Understanding Advertising"]);
+				 indexTitle.push(["8. Market Around Us "]);
+				 indexTitle.push(["9. Struggle for Equality"]);
+
+				 indexTitle.push(["Geography Tutorial"]);
+				 indexTitle.push(["1. Environment"]);
+				 indexTitle.push(["2. Inside our Earth"]);
+				 indexTitle.push(["3. Our changing earth"]);
+				 indexTitle.push(["4. Air"]);
+				 indexTitle.push(["5. Water"]);
+				 indexTitle.push(["6. Natural Vegetation and Wild Life"]);
+				 indexTitle.push(["7. Human Environment –Settlement. Transport and Communication"]);
+				 indexTitle.push(["8. Human Environment Interactions The Tropical and the Subtropical Region"]);
+				 indexTitle.push(["9. Life in the Temperate Grasslands"]);
+				 indexTitle.push(["10. Life in the Deserts"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=vdqkeVT9pvg&list=PLSX2xDnAMD5_67V6PoE2ooKgpTvwlpDAU",
+				"https://www.youtube.com/watch?v=uhg6y-T9-c0",
+				"https://www.youtube.com/watch?v=et1EBbTlUi0&list=PLVLoWQFkZbhUUe49TU6pfgcuxA_YFh8m8"
+				 ];
+			}
+		
+			else if(val==81)
+				{
+				 document.getElementById('subjectTutor').innerHTML="English";
+				 indexTitle.push(["English Tutorial"]);
+				 indexTitle.push(["1. i)The Best Christmas Present in the World  ii)Poem: The Ant and the Cricket"]);
+				 indexTitle.push(["2. i)The Tsunami ii)Poem: Geography Lesson"]);
+				 indexTitle.push(["3. i)Glimpses of the Past  ii)Poem: Macavity -The Mystery Cat"]);
+				 indexTitle.push(["4. i)Bepin Choudhury’s Lapse of Memory ii)Poem: The Last Bargain"]);
+				 indexTitle.push(["5. i)The Summit Within ii)Poem: The School Boy"]);
+				 indexTitle.push(["6. i)This is Jody’s Fawn ii)Poem: The Duck and the Kangaroo"]);
+				 indexTitle.push(["7. i)A Visit to Cambridge ii)Poem: When I set out for Lyonnesse"]);
+				 indexTitle.push(["8. i)A Short Monsoon Diary ii)Poem: On the Grasshopper and Cricket"]);
+				 indexTitle.push(["9. The Great Stone Face- I"]);
+				 indexTitle.push(["10. The Great Stone Face- II"]);
+
+				 indexTitle.push(["Grammar Tutorial"]);
+				 indexTitle.push(["1. Order of Words and Clauses"]);
+				 indexTitle.push(["2. Direct And Indirect Speech"]);
+				 indexTitle.push(["3. Active And Passive voice"]);
+				 indexTitle.push(["4. Tenses"]);
+				 indexTitle.push(["5. Noun"]);
+				 indexTitle.push(["6. Pronoun"]);
+				 indexTitle.push(["7. Verb"]);
+				 indexTitle.push(["8. Adverb"]);
+				 indexTitle.push(["9. Preposition"]);
+				 indexTitle.push(["10. Conjunctions"]);
+				 indexTitle.push(["11. Phrases And Idioms"]);
+				 indexTitle.push(["12. Vocabulary"]);
+				 indexTitle.push(["13. Comprehension Reading"]);
+
+				 indexTitle.push(["Writing Skills Tutorial"]);
+				 indexTitle.push(["1. Notice"]);
+				 indexTitle.push(["2. Story"]);
+				 indexTitle.push(["3. Formal And Informal Letters"]);
+				 indexTitle.push(["4. Dairy Entry"]);
+				 indexTitle.push(["5. Essay"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=bgHHZ4Arl4A&list=PLVLoWQFkZbhVuMhiezYWOW4AZFkNfbWuS",
+				"https://www.youtube.com/watch?v=6aZDImMSUGU&list=PLVLoWQFkZbhWWdPx33Fo55ivvR1K-NyDS",
+				"https://www.youtube.com/watch?v=DEE3RO2bb0I"
+				 ];
+				 }
+			
+				 else if(val==82)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Science";
+				 indexTitle.push(["Science Tutorial"]);
+				 indexTitle.push(["1. Crop Production and Management"]);
+				 indexTitle.push(["2. Microorganisms: Friend and Foe"]);
+				 indexTitle.push(["3. Synthetic Fibers and Plastics"]);
+				 indexTitle.push(["4. Materials: Metals and Non-Metals"]);
+				 indexTitle.push(["5. Coal and Petroleum"]);
+				 indexTitle.push(["6. Combustion and Flame"]);
+				 indexTitle.push(["7. Conservation of Plants and Animals"]);
+				 indexTitle.push(["8. Cell – Structure and Functions"]);
+				 indexTitle.push(["9. Reproduction in Animals"]);
+				 indexTitle.push(["10. Reaching the Age of Adolescence"]);
+				 indexTitle.push(["11. Force and Pressure"]);
+				 indexTitle.push(["12. Friction"]);
+				 indexTitle.push(["13. Sound"]);
+				 indexTitle.push(["14. Chemical Effects of Electric Current"]);
+				 indexTitle.push(["15. Some Natural Phenomena"]);
+				 indexTitle.push(["16. Lights"]);
+				 indexTitle.push(["17. Stars And solar system"]);
+				 indexTitle.push(["18. Pollution of air And Water"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=wAfjo53Cki0&list=PLjm_mvBNlvBYv6GKaiZ11pbUU9HIin1Go",
+				"https://www.youtube.com/watch?v=LQHLUHqDqLA",
+				"https://www.youtube.com/watch?v=dgfDuNmEhcA"
+				 ];
+				}
+
+				else if(val==83)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. Rational Numbers"]);
+				 indexTitle.push(["2. Linear Equations in one variable"]);
+				 indexTitle.push(["3. Understanding Quadrilaterals"]);
+				 indexTitle.push(["4. Practical Geometry"]);
+				 indexTitle.push(["5. Data Handling"]);
+				 indexTitle.push(["6. Squares and square roots"]);
+				 indexTitle.push(["7. Cube and Cube Roots"]);
+				 indexTitle.push(["8. Comparing Quantities"]);
+				 indexTitle.push(["9. Algebraic Expressions and Identities"]);
+				 indexTitle.push(["10. Visualising Solid Shapes"]);
+				 indexTitle.push(["11. Mensuration"]);
+				 indexTitle.push(["12. Exponents and Powers"]);
+				 indexTitle.push(["13. Direct and Inverse Proportions"]);
+				 indexTitle.push(["14. Factorisation"]);
+				 indexTitle.push(["15. Introduction to Graphs"]);
+				 indexTitle.push(["16. Playing with Numbers"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=nU0gr9T3PN4&list=PLjm_mvBNlvBaZGc7TxTirNpz5AvWFQ2gz",
+				"https://www.youtube.com/watch?v=cd-hIW7PvJw",
+				"https://www.youtube.com/watch?v=2AmldBXnzvY&list=PLVLoWQFkZbhUPr3lid5ATpymNOAfpk9-c"
+				 ];
+				}
+
+				else if(val==84)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Social science";
+				 indexTitle.push(["Social Science Tutorial"]);
+
+
+				 indexTitle.push(["History Tutorial"]);
+				 indexTitle.push(["1. Where, When, How"]);
+				 indexTitle.push(["2. The Establishment of Company Power"]);
+				 indexTitle.push(["3. Rural Life and Society"]);
+				 indexTitle.push(["4. Colonialism and Tribal Societies"]);
+				 indexTitle.push(["5. Crafts and Industries"]);
+				 indexTitle.push(["6. The Revolt of 1857-58"]);
+				 indexTitle.push(["7. Education and British rule"]);
+				 indexTitle.push(["8. Women and reform"]);
+				 indexTitle.push(["9. Challenging the Caste System"]);
+				 indexTitle.push(["10. Colonialism and Urban Change"]);
+				 indexTitle.push(["11. Changes in the Arts: Painting, Literature, architecture"]);
+				 indexTitle.push(["12. The Nationalist Movement"]);
+				 indexTitle.push(["13. India after Independence"]);
+
+				 indexTitle.push(["Social and Political Life Tutorial"]);
+				 indexTitle.push(["1. The Indian Constitution"]);
+				 indexTitle.push(["2. Understanding Secularism"]);
+				 indexTitle.push(["3. Why do we need a Parliament?"]);
+				 indexTitle.push(["4. Understanding Laws"]);
+				 indexTitle.push(["5. Judiciary"]);
+				 indexTitle.push(["6. Understanding Our Criminal Justice System"]);
+				 indexTitle.push(["7. Understanding Marginalisation"]);
+				 indexTitle.push(["8. Confronting Marginalisation"]);
+				 indexTitle.push(["9. Public Facilities"]);
+				 indexTitle.push(["10. Law and Social Justice"]);
+
+				 indexTitle.push(["Geography Tutorial"]);
+				 indexTitle.push(["1. Resources"]);
+				 indexTitle.push(["2. Land, Soil, Water, Natural Vegetation, and Wildlife Resources"]);
+				 indexTitle.push(["3. Mineral and Power Resources"]);
+				 indexTitle.push(["4. Agriculture"]);
+				 indexTitle.push(["5. Industries"]);
+				 indexTitle.push(["6. Human Resources"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=PAZDz1-WTgQ",
+				"https://www.youtube.com/watch?v=UyxnG1s_eaU&list=PLIEDqNKZqHoCTp5NOxKzjl4uyMRALqLVX",
+				"https://www.youtube.com/watch?v=u0UWug0ZglI"
+				 ];
+				 }
+		
+				 else if(val==91)
+				{
+				 document.getElementById('subjectTutor').innerHTML="English";
+				 indexTitle.push(["English Tutorial"]);
+				 indexTitle.push(["Fiction"]);
+				indexTitle.push(["1. How I Taught My Grandmother to Read, by Sudha Murthy "]);
+				 indexTitle.push(["2. A Dog Named Duke, by William D. Ellis "]);
+				 indexTitle.push(["3. The Man Who Knew Too Much, by Alexander Baron"]);
+				 indexTitle.push(["4. Keeping It from Harold, by P.G. Wodehouse"]);
+				 indexTitle.push(["5. Best Seller, by O.Henry "]);
+				 indexTitle.push(["Poetry"]);
+				 indexTitle.push(["1. The Brook, by Lord Alfred Tennyson "]);
+				 indexTitle.push(["2. The Road Not Taken, by Robert Frost "]);
+				 indexTitle.push(["3.	The Solitary Reaper, by William Wordsworth "]);
+				 indexTitle.push(["4.	The Seven Ages, by William Shakespeare "]);
+				 indexTitle.push(["5.	Oh, I Wish I'd Looked After Me Teeth, by Pam Ayres "]);
+				 indexTitle.push(["6.	Song of The Rain, by Kahlil Gibran "]);
+				 indexTitle.push(["Drama"]);
+				 indexTitle.push(["1.  Villa for Sale, by Sacha Guitry "]);
+				 indexTitle.push(["2. The Bishop's Candlesticks, by Norman Mckinnel"]);
+				 indexTitle.push(["Grammar"]);
+
+				 indexTitle.push(["1. Tenses"]);
+				 indexTitle.push(["2. Modals"]);
+				 indexTitle.push(["3. Clauses"]);
+				 indexTitle.push(["4. Reported Speech"]);
+				 indexTitle.push(["5. Articles"]);
+				 indexTitle.push(["5. Determiners"]);
+				 indexTitle.push(["5. Prepositions"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=MfEcSEc_eNA",
+				"https://www.youtube.com/watch?v=HAVuRS9wfVI",
+				"https://www.youtube.com/watch?v=OBW7b2X7dJs&list=PLVLoWQFkZbhWvnzQBSVOj14dJlH6YeoQc"
+				 ];
+				}
+			
+				else if(val==92)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Science";
+				 indexTitle.push(["Science Tutorial"]);
+				 indexTitle.push(["1. Matter in Our Surroundings"]);
+				 indexTitle.push(["2. Is Matter Around Us Pure?"]);
+				 indexTitle.push(["3. Atoms and Molecules"]);
+				 indexTitle.push(["4. Structure of the Atom"]);
+				 indexTitle.push(["5. The Fundamental Unit of Life"]);
+				 indexTitle.push(["6. Tissues"]);
+				 indexTitle.push(["7. Diversity in Living Organisms"]);
+				 indexTitle.push(["8. Motion"]);
+				 indexTitle.push(["9. Force and Laws of Motion"]);
+				 indexTitle.push(["10. Gravitation"]);
+				 indexTitle.push(["11. Work and Energy"]);
+				 indexTitle.push(["12. Sound"]);
+				 indexTitle.push(["13. Why Do We Fall Ill?"]);
+				 indexTitle.push(["14. Natural Resources"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=o-eWj1MVveI&list=PLjm_mvBNlvBb_1LfTcXjvGavlhDaSjbYz",
+				"https://www.youtube.com/watch?v=Y9Bd-n13C3c&list=PLoj-HZxkBkxG_N2I4prjL3RcmMPV4r9zv",
+				 ];
+				 }
+
+				 else if(val==93)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. Number System"]);
+				 indexTitle.push(["2. Polynomials"]);
+				 indexTitle.push(["3. Co-ordinate Geometry"]);
+				 indexTitle.push(["4. Linear Equations in Two Variables"]);
+				 indexTitle.push(["5. Introduction to Euclid's Geometry"]);
+				 indexTitle.push(["6. Lines and Angles"]);
+				 indexTitle.push(["7. Triangles"]);
+				 indexTitle.push(["8. Quadrilaterals"]);
+				 indexTitle.push(["9. Areas of Parallelograms and Triangles"]);
+				 indexTitle.push(["10. Circles"]);
+				 indexTitle.push(["11. Constructions"]);
+				 indexTitle.push(["12. Heron's Formula"]);
+				 indexTitle.push(["13. Surface Areas and Volumes"]);
+				 indexTitle.push(["14. Statistics and Probability"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=T_Ikx_Qn9Jc&list=PLjm_mvBNlvBa7QyMk4rJ0QTKt05EJSWF1",
+				"https://www.youtube.com/watch?v=viOLthrN2Ns&list=PL4BZMEV0Q77gJTUszDSjRIIZkMXZUT1zs",
+				"https://www.youtube.com/watch?v=yzzrDkFLewU&list=PLSy12OFbtllngwYqaxft1RejukgumHTBB"
+				 ];
+				 }
+
+				 else if(val==94)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Social Science";
+				 indexTitle.push(["Social Science Tutorial"]);
+				 indexTitle.push(["History Tutorial"]);
+				 indexTitle.push(["1. The French Revolution"]);
+				 indexTitle.push(["2. Socialism in Europe and the Russian Revolution"]);
+				 indexTitle.push(["3. Nazism and the Rise of Hitler"]);
+				 indexTitle.push(["4. Forest Society and Colonialism"]);
+				 indexTitle.push(["5. Pastoralists in the Modern World"]);
+
+				 indexTitle.push(["Geography Tutorial"]);
+				 indexTitle.push(["1. India - Size and Location"]);
+				 indexTitle.push(["2. Physical Features of India"]);
+				 indexTitle.push(["3. Climate"]);
+				 indexTitle.push(["4. Natural Vegetation and Wildlife"]);
+				 indexTitle.push(["5. Population"]);
+
+				 indexTitle.push(["Political Science Tutorial"]);
+				 indexTitle.push(["1. Democracy in the Contemporary World"]);
+				 indexTitle.push(["2. What is Democracy? Why Democracy?"]);
+				 indexTitle.push(["3. Constitutional Design"]);
+				 indexTitle.push(["4. Electoral Politics"]);
+				 indexTitle.push(["5. Working Of Institutions"]);
+
+				 indexTitle.push(["Economics Tutorial"]);
+				 indexTitle.push(["1. The Story of Village Palampur"]);
+				 indexTitle.push(["2. People as Resource"]);
+				 indexTitle.push(["3. Poverty as a Challenge"]);
+				 indexTitle.push(["4. Food Security in India"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=Lf-IKnoHdOs",
+				"https://www.youtube.com/watch?v=7NaEbiIevD4",
+				"https://www.youtube.com/watch?v=CaGUNQoMvWQ"
+				 ];
+				}
+
+				else if(val==101)
+			{
+				 document.getElementById('subjectTutor').innerHTML="English";
+				 indexTitle.push(["English Grammar Tutorial"]);
+
+				 indexTitle.push(["Reading SkillsTutorial"]);
+				 indexTitle.push(["1. Two unseen passages (including poems) with a variety of questions such as:"]);
+				 indexTitle.push(["• Multiple choice questions"]);
+				 indexTitle.push(["• Short answer questions"]);
+				 indexTitle.push(["• Very short answer questions"]);
+				 indexTitle.push(["• Note-making"]);
+				 indexTitle.push(["• Summarizing"]);
+				 indexTitle.push(["• Literary analysis"]);
+
+				 indexTitle.push(["Writing Section"]);
+				 indexTitle.push(["1. Formal letter writing (complaints, inquiries, placing orders, etc.)"]);
+				 indexTitle.push(["2. Informal letter writing (to family members, friends, etc.)"]);
+				 indexTitle.push(["3. Articles (for school magazines, newspapers, etc.)"]);
+				 indexTitle.push(["4. Speech writing (on various topics)"]);
+				 indexTitle.push(["5. Debate writing (pros and cons of a topic)"]);
+				 indexTitle.push(["6. Descriptive and narrative compositions (based on personal experiences, stories, etc.)"]);
+
+				 indexTitle.push(["Grammar"]);
+				 indexTitle.push(["1. Tenses (present, past, future)"]);
+				 indexTitle.push(["2. Modals (should, would, could, might, etc.)"]);
+				 indexTitle.push(["3. Clauses (types of clauses, dependent and independent clauses)"]);
+				 indexTitle.push(["4. Voices (active and passive)"]);
+				 indexTitle.push(["5. Narration (direct and indirect speech)"]);
+				 indexTitle.push(["6. Determiners (articles, demonstratives, possessives, etc.)"]);
+				 indexTitle.push(["7. Prepositions (usage in sentences)"]);
+				 indexTitle.push(["8. Conjunctions (coordinating and subordinating conjunctions)"]);
+				 indexTitle.push(["9. Punctuation (rules of punctuation marks)"]);
+
+				 indexTitle.push(["Fiction"]);
+				 indexTitle.push(["1. Two Gentleman Of Veron"]);
+				 indexTitle.push(["2.  A Shady Plot"]);
+				 indexTitle.push(["3. Mrs Packletide’s Tiger"]);
+				 indexTitle.push(["4. Patol Babu"]);
+				 indexTitle.push(["5. The Letter"]);
+				 indexTitle.push(["6. Virtually True"]);
+
+				 indexTitle.push(["Poetry"]);
+				 indexTitle.push(["1. The Frog and the Nightingale"]);
+				 indexTitle.push(["2. Ozymandias"]);
+				 indexTitle.push(["3. The Rhyme of the Ancient Mariner"]);
+				 indexTitle.push(["4. Not Marble, nor the Gilded Monuments"]);
+				 indexTitle.push(["5. Snake"]);
+
+				 indexTitle.push(["Drama"]);
+				 indexTitle.push(["1. The Dear Departed"]);
+				 indexTitle.push(["2. Julius Caesar"]);
+
+				 indexTitle.push(["Health And Medicine"]);
+				 indexTitle.push(["1. Environment"]);
+				 indexTitle.push(["2. Education"]);
+				 indexTitle.push(["3. Travel and Tourism"]);
+				 indexTitle.push(["4. science"]);
+				 indexTitle.push(["5. National Integration"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=3Jij-x_d_34",
+				"https://www.youtube.com/watch?v=VJxoh1gaVr8&list=PLjm_mvBNlvBbW9bvM1PYU0FSJtgOS0DkX",
+				"https://www.youtube.com/watch?v=BOBajDZcXSk"
+				 ];
+				}
+
+				else if(val==102)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Science";
+				 indexTitle.push(["Science Tutorial"]);
+
+				 indexTitle.push(["Physics Tutorial"]);
+				 indexTitle.push(["1. Light - Reflection and Refraction"]);
+				 indexTitle.push(["2. Human Eye and Colourful World"]);
+				 indexTitle.push(["3. Electricity"]);
+				 indexTitle.push(["4. Magnetic Effect Of Electric Current"]);
+				 indexTitle.push(["5. Sources Of Energy"]);
+
+				 indexTitle.push(["Chemistry Tutorial"]);
+				 indexTitle.push(["1. Chemical Reactions and Equations"]);
+				 indexTitle.push(["2. Acids, Bases and Salts"]);
+				 indexTitle.push(["3. Metals and Non-Metals"]);
+				 indexTitle.push(["4. Carbon and its Compounds"]);
+				 indexTitle.push(["5. Periodic Classification of Elements"]);
+
+				 indexTitle.push(["Biology Tutorial"]);
+				 indexTitle.push(["1. Life Processes"]);
+				 indexTitle.push(["2. Control and Coordination"]);
+				 indexTitle.push(["3. How do Organisms Reproduce?"]);
+				 indexTitle.push(["4. Heredity and Evolution"]);
+				 indexTitle.push(["5. Our Environment"]);
+				 indexTitle.push(["6. Management of Natural Resources"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=7N7_cgHkCHg&list=PLjm_mvBNlvBaFFXw5u__4GaTFBdYRjcNi",
+				"https://www.youtube.com/watch?v=YV52EpRIy7Q",
+				 ];
+				}
+
+				else if(val==103)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Mathematics";
+				 indexTitle.push(["Mathematics Tutorial"]);
+				 indexTitle.push(["1. Real Numbers"]);
+				 indexTitle.push(["2. Polynomials"]);
+				 indexTitle.push(["3. Pair of Linear Equations in Two Variables"]);
+				 indexTitle.push(["4. Quadratic Equations"]);
+				 indexTitle.push(["5. Arithmetic Progressions"]);
+				 indexTitle.push(["6. Triangles"]);
+				 indexTitle.push(["7. Coordinate Geometry"]);
+				 indexTitle.push(["8. Introduction to Trigonometry"]);
+				 indexTitle.push(["9. Some Applications of Trigonometry"]);
+				 indexTitle.push(["10. Circles"]);
+				 indexTitle.push(["11. Constructions"]);
+				 indexTitle.push(["12. Areas Related To Circles"]);
+				 indexTitle.push(["13. Surface Areas and Volumes"]);
+				 indexTitle.push(["14. Statistics and Probability"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=9Ib6eB90n8o&list=PLjm_mvBNlvBZ8d1EGhXxiVnviM4yPf-Uq",
+				"https://www.youtube.com/watch?v=Gh0qoV9TdBI&list=PLjm_mvBNlvBbt8uSpdGmgYY9iiAMt_K_r",
+				"https://www.youtube.com/watch?v=ifGEt6y0jk0"
+				 ];
+				 }
+
+				 else if(val==104)
+				{
+				 document.getElementById('subjectTutor').innerHTML="Social Science";
+				 indexTitle.push(["Social Science Tutorial"]);
+
+				 indexTitle.push(["History Tutorial"]);
+				 indexTitle.push(["1. The Rise of Nationalism in Europe"]);
+				 indexTitle.push(["2. The Nationalist Movement in Indo-China"]);
+				 indexTitle.push(["3. Nationalism in India"]);
+				 indexTitle.push(["4. The Making of a Global World"]);
+				 indexTitle.push(["5. The Age of Industrialisation"]);
+				 indexTitle.push(["6. Work, Life, and Leisure"]);
+
+				 indexTitle.push(["Geography Tutorial"]);
+				 indexTitle.push(["1. Resources and Development"]);
+				 indexTitle.push(["2. Forest and Wildlife Resources"]);
+				 indexTitle.push(["3. Water Resources"]);
+				 indexTitle.push(["4. Agriculture"]);
+				 indexTitle.push(["5. Minerals and Energy Resources"]);
+				 indexTitle.push(["6. Manufacturing Industries"]);
+				 indexTitle.push(["7. Lifelines of National Economy"]);
+
+				 indexTitle.push(["Political Science Tutorial"]);
+				 indexTitle.push(["1. Power Sharing"]);
+				 indexTitle.push(["2. Federalism"]);
+				 indexTitle.push(["3. Democracy and Diversity"]);
+				 indexTitle.push(["4. Gender, Religion, and Caste"]);
+				 indexTitle.push(["5. Popular Struggles and Movements"]);
+				 indexTitle.push(["6. Political Parties"]);
+
+				 indexTitle.push(["Economics Tutorial"]);
+				 indexTitle.push(["1. Development"]);
+				 indexTitle.push(["2. Sectors of the Indian Economy"]);
+				 indexTitle.push(["3. Money and Credit"]);
+				 indexTitle.push(["4. Globalisation and the Indian Economy"]);
+				 indexTitle.push(["5. Consumer Rights"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=Fl3SIzmPzYI",
+				"https://www.youtube.com/watch?v=dQKJZO1_Zqc",
+				"https://www.youtube.com/watch?v=suoldHDCPWY"
+				 ];
+				 }
+
+				 else if(val==105)
+				{
+				 document.getElementById('subjectTutor').innerHTML="ICT";
+				 indexTitle.push(["ICT Tutorial"]);
+				 indexTitle.push(["1. Basics of Computers:"]);
+				 indexTitle.push(["2. Internet and Web Technologies:"]);
+				 indexTitle.push(["3. Microsoft Office Tools:"]);
+				 indexTitle.push(["4. Cyber Safety and Digital Citizenship:"]);
+				 indexTitle.push(["5. Emerging Technologies:"]);
+				 indexTitle.push(["6. Practical Skills and Applications:"]);
+
+				 videoTitles = [
+				"https://www.youtube.com/watch?v=agxWCzsSjHI&list=PLDS6oimu5evqCMKlZ6Yyn0h54bZ2Z0K3h",
+				"https://www.youtube.com/watch?v=OlENaYesqAA&list=PLjgeul6nCGSFdwTDe5qr96GdIiFbmorMw"
+				 ];
+				 }
+			GenerateVideo(videoTitles);
+			//GenerateVideo(videoTitle);
+		 GenerateTable(indexTitle);
+		}
+		   </script>
+        <script type="text/javascript">
+    function GenerateTable(indexTitle) {
+        
+ 
+        var table = document.createElement("TABLE");
+        //table.border = "1";
+ 
+        var columnCount = indexTitle[0].length;
+	
+        var row = table.insertRow(-1);
+		
+        for (var i = 0; i < columnCount; i++) {
+            var headerCell = document.createElement("TH");
+            headerCell.innerHTML = indexTitle[0][i];
+            row.appendChild(headerCell);
+        }
+ 
+    
+        for (var i = 1; i < indexTitle.length; i++) {
+            row = table.insertRow(-1);
+			row.setAttribute("onclick", "onRowClick(this)");
+			row.style.cursor = "pointer"; // Set cursor to pointer
+			
+            for (var j = 0; j < columnCount; j++) {
+                var cell = row.insertCell(-1);
+                cell.innerHTML = indexTitle[i][j];
+				
+            }
+        }
+ 
+        var dvTable = document.getElementById("dvTable");
+        dvTable.innerHTML = "";
+        dvTable.appendChild(table);
+    }
+	
+
+function onRowClick(row) {
+    // Handle row click, you can access the row data using row.cells[index].innerHTML
+    alert("Clicked row: " + row.cells[0].innerHTML); // Change this line based on your needs
+}
+
+</script>
+
+
+<script>
+    function GenerateVideo(videoTitles) {
+       
+		var videoBox = document.getElementById("videoBox");
+        videoBox.innerHTML = ""; // Clear any previous content
+
+        for (var i = 0; i < videoTitles.length; i++) {
+            var videoLink = videoTitles[i];
+            var videoId = getYouTubeVideoId(videoLink);
+
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("width", "100%");
+            iframe.setAttribute("height", "100%");
+            iframe.setAttribute("src", "https://www.youtube.com/embed/" + videoId);
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "true");
+
+            videoBox.appendChild(iframe);
+        }
+    }
+
+    function getYouTubeVideoId(url) {
+        var videoIdRegex = /[?&]v=([^?&]+)/;
+        var match = url.match(videoIdRegex);
+        return match ? match[1] : null;
+    }
+
+    //GenerateVideo(); // Call the function to generate the video box
+</script>
+
+
+	 <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- base:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

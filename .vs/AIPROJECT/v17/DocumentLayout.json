@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My AIProject\\AIPROJECT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|d:\\my aiproject\\aiproject\\aiproject\\quiz\\exam.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|solutionrelative:aiproject\\quiz\\exam.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|D:\\My AIProject\\AIPROJECT\\aiproject\\dashboard\\result.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|solutionrelative:aiproject\\dashboard\\result.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|D:\\My AIProject\\AIPROJECT\\aiproject\\quiz\\exam.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|solutionrelative:aiproject\\quiz\\exam.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|D:\\My AIProject\\AIPROJECT\\aiproject\\loginpage\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|solutionrelative:aiproject\\loginpage\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|D:\\My AIProject\\AIPROJECT\\aiproject\\dashboard\\result.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}|AIPROJECT\\AIPROJECT.csproj|solutionrelative:aiproject\\dashboard\\result.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.aspx",
+              "DocumentMoniker": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\loginPage\\login.aspx",
+              "RelativeDocumentMoniker": "AIPROJECT\\loginPage\\login.aspx",
+              "ToolTip": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\loginPage\\login.aspx",
+              "RelativeToolTip": "AIPROJECT\\loginPage\\login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-14T12:28:02.779Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "exam.aspx.cs",
+              "DocumentMoniker": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\quiz\\exam.aspx.cs",
+              "RelativeDocumentMoniker": "AIPROJECT\\quiz\\exam.aspx.cs",
+              "ToolTip": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\quiz\\exam.aspx.cs",
+              "RelativeToolTip": "AIPROJECT\\quiz\\exam.aspx.cs",
+              "ViewState": "AQIAACEDAAAAAAAAAAAmwDUDAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:54:15.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "exam.aspx",
+              "DocumentMoniker": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\quiz\\exam.aspx",
+              "RelativeDocumentMoniker": "AIPROJECT\\quiz\\exam.aspx",
+              "ToolTip": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\quiz\\exam.aspx",
+              "RelativeToolTip": "AIPROJECT\\quiz\\exam.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-22T08:53:34.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "result.aspx.cs",
+              "DocumentMoniker": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\Dashboard\\result.aspx.cs",
+              "RelativeDocumentMoniker": "AIPROJECT\\Dashboard\\result.aspx.cs",
+              "ToolTip": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\Dashboard\\result.aspx.cs",
+              "RelativeToolTip": "AIPROJECT\\Dashboard\\result.aspx.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAIwLAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T11:42:54.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "result.aspx",
+              "DocumentMoniker": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\Dashboard\\result.aspx",
+              "RelativeDocumentMoniker": "AIPROJECT\\Dashboard\\result.aspx",
+              "ToolTip": "D:\\My AIProject\\AIPROJECT\\AIPROJECT\\Dashboard\\result.aspx",
+              "RelativeToolTip": "AIPROJECT\\Dashboard\\result.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-12T11:53:57.679Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

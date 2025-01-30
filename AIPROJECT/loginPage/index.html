@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background-image:url('images/AI_BackgroundImg.jpg');background-repeat:no-repeat; width:100%;background-size: cover;">
+
+<div style="
+    padding: 25px 16px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center; color:white;">
+  <p>Welcome to AI Assitance</p>
+  <p style="font-size: 17px;">Your Complete Study Search Ends Here</p>
+  </div>
+  <div class="container classDiv" style="    float: inline-end;">
+  
+    <input type="checkbox" id="flip">
+	
+    <div class="cover">
+      <div class="front">
+        <img src="images/aiImage.png" alt="">
+        <div class="text">
+          <span class="wordcontainer textword">Your complete solution is with <br> AI Tutor Assitance</span><br>
+          <span class="text-2">Let's get connected</span>
+		  
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/aiImage.png" alt="">
+        <div class="text">
+          <span class="text-1">Complete miles of journey <br> with one step</span>
+          <span class="text-2">Let's get started</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="#">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Signup</div>
+        <form action="#">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter full your name*" required>
+              </div>
+			  <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Enter your mobile number*" required>
+              </div>
+             
+			  <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter your password" required>
+              </div>
+			  
+              <div class="button input-box">
+                <input type="submit" value="Sumbit">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+<script>
+var words = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+</script>
+</html>

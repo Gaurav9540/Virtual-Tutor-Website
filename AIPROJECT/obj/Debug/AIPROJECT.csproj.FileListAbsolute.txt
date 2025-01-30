@@ -1,0 +1,219 @@
+E:\MyProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll.config
+E:\MyProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.pdb
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe.config
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.rsp
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe.config
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.rsp
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Managed.Core.targets
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.AppContext.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Collections.Immutable.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Console.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Globalization.Calendars.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Http.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Sockets.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Reflection.Metadata.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.ValueTuple.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe.config
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.rsp
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe
+E:\MyProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe.config
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\AspNet.ScriptManager.jQuery.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.WebForms.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.Web.Infrastructure.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\WebGrease.dll
+E:\MyProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.xml
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.xml
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.pdb
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\MyProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MyProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.AssemblyReference.cache
+E:\MyProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.CoreCompileInputs.cache
+E:\MyProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.Up2Date
+E:\MyProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.dll
+E:\MyProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.pdb
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll.config
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.pdb
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe.config
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.rsp
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe.config
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.rsp
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.AppContext.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Console.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Http.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Sockets.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.ValueTuple.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe.config
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.rsp
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\WebGrease.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.xml
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.xml
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.pdb
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.AssemblyReference.cache
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.CoreCompileInputs.cache
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.Up2Date
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.dll
+C:\Users\VAIBHAVI\Desktop\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.pdb
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll.config
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\AIPROJECT.pdb
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.exe.config
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csc.rsp
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.exe.config
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\csi.rsp
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Managed.Core.targets
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.AppContext.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Collections.Immutable.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Console.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Globalization.Calendars.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Http.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Net.Sockets.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Reflection.Metadata.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.ValueTuple.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XmlDocument.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.exe.config
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\vbc.rsp
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\roslyn\VBCSCompiler.exe.config
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\AspNet.ScriptManager.jQuery.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.ScriptManager.WebForms.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.Web.Infrastructure.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\WebGrease.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\System.Web.Optimization.xml
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Newtonsoft.Json.xml
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Antlr3.Runtime.pdb
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\My AIProject\AIPROJECT\AIPROJECT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.AssemblyReference.cache
+D:\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.CoreCompileInputs.cache
+D:\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.csproj.Up2Date
+D:\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.dll
+D:\My AIProject\AIPROJECT\AIPROJECT\obj\Debug\AIPROJECT.pdb

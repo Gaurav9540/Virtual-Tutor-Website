@@ -1,0 +1,333 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="HR_Web_Application.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>Dashboard - HRMS admin template</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/plugins/raphael/raphael.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/greedynav.js"></script>
+
+    <script src="assets/js/layout.js"></script>
+    <script src="assets/js/theme-settings.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+        var id, role, name;
+        $(document).ready(function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            id = urlParams.get('id');
+            role = urlParams.get('role');
+
+
+        });
+
+        function nextpage(value) {
+            if (value == 'welcome') {
+
+                window.location = 'dashboard.aspx?id=' + id + '&role=' + role;
+            }
+            else if (value == 'changepass') {
+
+                window.location = 'changepassword.aspx?id=' + id + '&role=' + role;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+
+    <div class="main-wrapper">
+        <form id="form1" runat="server">
+            <div class="header">
+
+                <div class="header-left">
+                    <a href="/Dashboard.aspx" style="float: left" class="logo"></a>
+                    <a href="admin-dashboard.html" class="logo2">
+                        <img src="assets/img/logo2.png" width="40" height="40" alt="Logo">
+                    </a>
+                </div>
+
+
+
+                <%-- <a id="toggle_btn" href="javascript:void(0);">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>--%>
+
+                <%--<div class="page-title-box" style="font-size: 19px; color: white;">
+                <h3>Designation:  
+                    <asp:Label ID="lblDesignation" runat="server"></asp:Label></h3>
+            </div>--%>
+
+
+                <%--<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa-solid fa-bars"></i></a>--%>
+
+                <ul class="nav user-menu">
+
+
+
+                    <li class="nav-item dropdown has-arrow main-drop">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                            <%-- <span class="user-img">
+                            <img src="assets/img/profiles/avatar-21.jpg" alt="User Image">
+                            <span class="status online"></span></span>--%>
+                            <span style="font-size: 18px;">Welcome
+                <asp:Label ID="welcomeName" runat="server"></asp:Label></span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <%--   <a class="dropdown-item" href="myprofile.aspx">My Profile</a>--%>
+                            <asp:LinkButton ID="LinkButton4" runat="server" Style="font-size: 12px; display: inline;" OnClick="myprofile_Click">myprofile</asp:LinkButton></i>
+                            <%--<a class="dropdown-item" href="settings.html">Settings</a>--%>
+                            <%--<a class="dropdown-item" href="~/loginpage/login.aspx">Logout</a>--%>
+                            <asp:Button ID="btnLogout" Text="Logout" runat="server" class="btn btn-danger btn-rounded mt-1" Style="margin-left: 10px;" OnClick="btnLogout_Click" />
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="dropdown mobile-user-menu">
+
+                    <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis-vertical"></i></a>-->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+
+                        <a class="dropdown-item" href="index.html">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+                    <div id="sidebar-menu" class="sidebar-menu">
+                        <nav class="greedys sidebar-horizantal">
+                            <ul class="list-inline-item list-unstyled links">
+                            </ul>
+                            <button class="viewmoremenu">More Menu</button>
+                            <ul class="hidden-links hidden">
+                            </ul>
+                        </nav>
+                        <ul class="sidebar-vertical">
+
+                            <li>
+                                <asp:LinkButton ID="LinkButton10" Text="Dashboard" runat="server" class="" Style="margin-left: 10px;" OnClick="dashboard_Click"></asp:LinkButton>
+                                <%--<a href="Dashboard.aspx"><i class="fas fa-tachometer-alt fa-lg text-primary"></i><span>Dashboard</span></a>--%>
+                            
+                            </li>
+                            <li class="submenu" runat="server" id="Li1">
+                                <a href="#"><i class="fas fa-users fa-lg text-primary"></i><span>Profile</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton7" Text="My Profile" runat="server" class="" Style="margin-left: 10px;" OnClick="myprofile_Click"></asp:LinkButton></li>
+
+
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton8" Text="View Profile" runat="server" class="" Style="margin-left: 10px;" OnClick="viewupdateprofile_Click"></asp:LinkButton></li>
+
+
+                                </ul>
+                            </li>
+
+                            <%-- <li>
+                                <a href="myprofile.aspx"><i class="la la-user fa-lg text-primary"></i><span>My Profile</span></a>
+                                <i class="la la-user fa-lg text-primary" style="padding: 13px;">
+                                    <asp:LinkButton ID="LinkButton3" runat="server" Style="font-size: 12px; display: inline; text-: capitalize;" OnClick="myprofile_Click">myprofile</asp:LinkButton></i>
+                            </li>--%>
+
+                            <li class="submenu" runat="server" id="content" visible="false">
+                                <a href="#"><i class="fas fa-users fa-lg text-primary"></i><span>Content Details</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="Button1" Text="Add Content" runat="server" class="" Style="margin-left: 10px;" OnClick="addsubjectcontent_Click"></asp:LinkButton></li>
+                                    <%--<li><a href="addsubjectcontent.aspx">Add Content </a></li>--%>
+
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton1" Text="View Content" runat="server" class="" Style="margin-left: 10px;" OnClick="viewupdatesubjectcontent_Click"></asp:LinkButton></li>
+
+
+                                </ul>
+                            </li>
+
+
+                            <li class="submenu" runat="server" id="question" visible="false">
+                                <a href="#"><i class="fas fa-users fa-lg text-primary"></i><span>Exam Question Details</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton5" Text="Add Question" runat="server" class="" Style="margin-left: 10px;" OnClick="addquestion_Click"></asp:LinkButton></li>
+                                    <li>
+                                        <asp:LinkButton ID="LinkButton6" Text="View Question" runat="server" class="" Style="margin-left: 10px;" OnClick="viewupdatequestion_Click"></asp:LinkButton></li>
+
+                                    <%-- <li><a href="addquestion.aspx">Add Question </a></li>--%>
+                                    <%--<li><a href="viewquestion.aspx">View Question</a></li>--%>
+                                </ul>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="LinkButton3" Text="Progress Report" runat="server" class="" Style="margin-left: 10px;" OnClick="progressReport_Click"></asp:LinkButton></li>
+                            <%-- <a href="progressreport.aspx"><i class="fas fa-key fa-lg text-primary"></i><span></span></a>--%>
+
+                            <li>
+                                <%--<a href="result.aspx"><i class="fas fa-key fa-lg text-primary"></i><span>Result</span></a>--%>
+                                <asp:LinkButton ID="LinkButton9" Text="Result" runat="server" class="" Style="margin-left: 10px;" OnClick="result_Click"></asp:LinkButton>
+                            </li>
+                            <%-- <li class="submenu">
+                            <a href="#"><i class="fas fa-clock fa-lg text-primary"></i><span>Timesheet</span> <span class="menu-arrow"></span></a>
+                            <ul>
+
+                                <li><a href="addattendance.aspx">Add Attendence</a></li>
+                                <li><a href="viewattendance.aspx">View Attendence</a></li>
+                                <li><a href="regularization.aspx">Regularization</a></li>
+                                <li><a href="viewregularization.aspx">View Regularization</a></li>
+                                <li runat="server" id="otherregularization" visible="false"><a href="othersregularization.aspx">Others Regularization</a></li>
+                                <li runat="server" id="downloadAttendence" visible="false"><a href="#">Download Attendence</a></li>
+                            </ul>
+                        </li>--%>
+                            <%-- <li class="submenu">
+                            <a href="#"><i class="fas fa-money-bill fa-lg text-success"></i><span>Salary</span> <span class="menu-arrow"></span></a>
+                            <ul>
+
+                                <li runat="server" id="addsalary" visible="false"><a href="addsalary.aspx">Add Salary</a></li>
+                                <li><a href="viewsalary.aspx">View Salary</a></li>
+                                <li runat="server" id="downloadSalary" visible="false"><a href="#">Download Salary Sheet</a></li>
+                            </ul>
+                        </li>--%>
+
+                            <%--                        <li class="submenu">
+                            <a href="#"><i class="fas fa-ticket-alt fa-lg text-primary"></i><span>My Ticket</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="myticket.aspx">Raise Ticket</a></li>
+                                <li runat="server" id="viewticket" visible="false"><a href="viewticket.aspx">View Ticket</a></li>
+                                <li runat="server" id="addticket" visible="false"><a href="addticket.aspx">Add Ticket</a></li>
+                                <li runat="server" id="employeetickets" visible="false"><a href="allemployeetickets.aspx">All Employees Tickets</a></li>
+
+                            </ul>
+                        </li>--%>
+
+                            <%--  <li class="submenu">
+                            <a href="#"><i class="fas fa-bullseye fa-lg text-success"></i><span>Lead Management</span> <span class="menu-arrow"></span></a>
+                            <ul>
+
+                                <li><a href="addleads.aspx">Add Leads</a></li>
+                                <li><a href="viewleads.aspx">View Leads</a></li>
+
+                            </ul>
+                        </li>--%>
+                            <%--<li>
+                            <a href=""><i class="fas fa-file-excel"></i><span>Worksheet</span></a>
+                        </li>
+                        <li>
+                            <a href="expenses.aspx"><i class="fas fa-money-check-alt fa-lg text-danger"></i><span>Expenses</span></a>
+                        </li>
+                        <li>
+                            <a href="clients.aspx"><i class="fas fa-users fa-lg text-primary"></i><span>Clients</span></a>
+                        </li>--%>
+                            <%-- <li class="submenu">
+                            <a href="#"><i class="fas fa-folder fa-lg text-primary"></i><span>Projects</span> <span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="projects.aspx">Projects</a></li>
+                                 <li><a href="tasks.html">tasks</a></li>
+                                <li><a href="task-board.html">task board</a></li>
+                            </ul>
+                        </li>--%>
+                            <%--<li>
+                            <a href="leads.html"><i class="la la-user-secret"></i><span>Leads</span></a>
+                        </li>
+                        <li>
+                            <a href="tickets.aspx"><i class="fas fa-ticket-alt fa-lg text-primary"></i><span>Tickets</span></a>
+                        </li>--%>
+
+                            <li>
+                                <%-- <a href="changepassword.aspx"><i class="fas fa-key fa-lg text-primary"></i><span>Change Password</span></a>--%>
+                                <i class="fas fa-key fa-lg text-primary" style="padding: 13px;">
+                                    <asp:LinkButton ID="LinkButton2" runat="server" Style="font-size: 12px; display: inline;" OnClick="changepassword_Click">Change Password</asp:LinkButton></i>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-sign-out-alt" style="padding: 13px;">
+                                    <asp:LinkButton ID="Button2" Text="Logout" runat="server" Style="font-size: 12px; display: inline; text-: capitalize;" OnClick="btnLogout_Click" /></i>
+
+                            </li>
+
+                            <%--<ul>
+                                <li><a href="changepassword.aspx">Change Password </a></li>
+
+                                <li><a href="index.html">Login </a></li>
+                                <li><a href="register.html">Register </a></li>                             
+                                <li><a href="otp.html">OTP </a></li>
+                                <li><a href="lock-screen.html">Lock Screen </a></li>
+                            </ul>--%>
+
+                            <%--<li class="submenu">
+                            <a href="#"><i class="la la-exclamation-triangle"></i><span>Error Pages </span><span class="menu-arrow"></span></a>
+                            <ul>
+                                <li><a href="error-404.html">404 Error </a></li>
+                                <li><a href="error-500.html">500 Error </a></li>
+                            </ul>
+                        </li>--%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

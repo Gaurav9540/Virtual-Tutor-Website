@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34584BD1-1DC1-491A-84D3-5BE9E1F05A8E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AIPROJECT</RootNamespace>
+    <AssemblyName>AIPROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44342</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Dashboard\addquestion.aspx" />
+    <Content Include="Dashboard\changepassword.aspx" />
+    <Content Include="Dashboard\addsubjectcontent.aspx" />
+    <Content Include="Dashboard\assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Dashboard\assets\css\bootstrap.min.css" />
+    <Content Include="Dashboard\assets\css\ckeditor.css" />
+    <Content Include="Dashboard\assets\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Dashboard\assets\css\fullcalendar.min.css" />
+    <Content Include="Dashboard\assets\css\line-awesome.min.css" />
+    <Content Include="Dashboard\assets\css\material.css" />
+    <Content Include="Dashboard\assets\css\select2.min.css" />
+    <Content Include="Dashboard\assets\css\style.css" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400.svg" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400.svg" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900.svg" />
+    <Content Include="Dashboard\assets\img\attachment.png" />
+    <Content Include="Dashboard\assets\img\boxed.png" />
+    <Content Include="Dashboard\assets\img\calendar.gif" />
+    <Content Include="Dashboard\assets\img\calendarnew.png" />
+    <Content Include="Dashboard\assets\img\close.png" />
+    <Content Include="Dashboard\assets\img\compact.png" />
+    <Content Include="Dashboard\assets\img\dark.png" />
+    <Content Include="Dashboard\assets\img\detached.png" />
+    <Content Include="Dashboard\assets\img\favicon.png" />
+    <Content Include="Dashboard\assets\img\flags\de.png" />
+    <Content Include="Dashboard\assets\img\flags\es.png" />
+    <Content Include="Dashboard\assets\img\flags\fr.png" />
+    <Content Include="Dashboard\assets\img\flags\us.png" />
+    <Content Include="Dashboard\assets\img\horizontal.png" />
+    <Content Include="Dashboard\assets\img\icons\eye.svg" />
+    <Content Include="Dashboard\assets\img\icons\icon-01.svg" />
+    <Content Include="Dashboard\assets\img\icons\icon-02.svg" />
+    <Content Include="Dashboard\assets\img\icons\icon-03.svg" />
+    <Content Include="Dashboard\assets\img\icons\icon-04.svg" />
+    <Content Include="Dashboard\assets\img\icons\icon-05.svg" />
+    <Content Include="Dashboard\assets\img\img-01.jpg" />
+    <Content Include="Dashboard\assets\img\img1.jpg" />
+    <Content Include="Dashboard\assets\img\img2.jpg" />
+    <Content Include="Dashboard\assets\img\img3.jpg" />
+    <Content Include="Dashboard\assets\img\img4.jpg" />
+    <Content Include="Dashboard\assets\img\keyboard.png" />
+    <Content Include="Dashboard\assets\img\kit1.png" />
+    <Content Include="Dashboard\assets\img\laptop.png" />
+    <Content Include="Dashboard\assets\img\logo.png" />
+    <Content Include="Dashboard\assets\img\logo2.png" />
+    <Content Include="Dashboard\assets\img\logo3.png" />
+    <Content Include="Dashboard\assets\img\mouse.png" />
+    <Content Include="Dashboard\assets\img\placeholder.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-01.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-02.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-03.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-04.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-05.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-06.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-07.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-08.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-09.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-10.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-11.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-12.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-13.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-14.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-15.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-16.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-17.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-18.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-19.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-20.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-21.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-22.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-24.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-25.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-26.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-28.jpg" />
+    <Content Include="Dashboard\assets\img\profiles\avatar-29.jpg" />
+    <Content Include="Dashboard\assets\img\small-hover.png" />
+    <Content Include="Dashboard\assets\img\two-col.png" />
+    <Content Include="Dashboard\assets\img\user.jpg" />
+    <Content Include="Dashboard\assets\img\vertical.png" />
+    <Content Include="Dashboard\assets\img\video-call.jpg" />
+    <Content Include="Dashboard\assets\js\app.js" />
+    <Content Include="Dashboard\assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Dashboard\assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Dashboard\assets\js\chart.js" />
+    <Content Include="Dashboard\assets\js\Chart.min.js" />
+    <Content Include="Dashboard\assets\js\ckeditor.js" />
+    <Content Include="Dashboard\assets\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Dashboard\assets\js\dropfiles.js" />
+    <Content Include="Dashboard\assets\js\fullcalendar.min.js" />
+    <Content Include="Dashboard\assets\js\greedynav.js" />
+    <Content Include="Dashboard\assets\js\jquery-3.7.0.min.js" />
+    <Content Include="Dashboard\assets\js\jquery-ui.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.dataTables.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.fullcalendar.js" />
+    <Content Include="Dashboard\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.slimscroll.min.js" />
+    <Content Include="Dashboard\assets\js\jquery.ui.touch-punch.min.js" />
+    <Content Include="Dashboard\assets\js\layout.js" />
+    <Content Include="Dashboard\assets\js\line-chart.js" />
+    <Content Include="Dashboard\assets\js\mask.js" />
+    <Content Include="Dashboard\assets\js\moment.min.js" />
+    <Content Include="Dashboard\assets\js\multiselect.min.js" />
+    <Content Include="Dashboard\assets\js\select2.min.js" />
+    <Content Include="Dashboard\assets\js\task.js" />
+    <Content Include="Dashboard\assets\js\theme-settings.js" />
+    <Content Include="Dashboard\assets\plugins\bootstrap-tagsinput\bootstrap-tagsinput.css" />
+    <Content Include="Dashboard\assets\plugins\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="Dashboard\assets\plugins\daterangepicker\daterangepicker.css" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\css\all.min.css" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Dashboard\assets\plugins\morris\morris.css" />
+    <Content Include="Dashboard\assets\plugins\morris\morris.min.js" />
+    <Content Include="Dashboard\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="Dashboard\assets\plugins\sticky-kit-master\dist\sticky-kit.min.js" />
+    <Content Include="Dashboard\changepasswordold.aspx" />
+    <Content Include="Dashboard\Dashboard.aspx" />
+    <Content Include="Dashboard\myprofile.aspx" />
+    <Content Include="Dashboard\progressreport.aspx" />
+    <Content Include="Dashboard\result.aspx" />
+    <Content Include="Dashboard\viewprofile.aspx" />
+    <Content Include="Dashboard\viewquestion.aspx" />
+    <Content Include="Dashboard\viewregularization.aspx" />
+    <Content Include="Dashboard\viewupdatequestion.aspx" />
+    <Content Include="Dashboard\viewupdatesubjectcontent.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Echat\aichatbot.aspx" />
+    <Content Include="Echat\css\vertical-layout-light\style.css" />
+    <Content Include="Echat\image\loader.gif" />
+    <Content Include="Echat\image\loder.gif" />
+    <Content Include="Echat\js\ace.js" />
+    <Content Include="Echat\js\alerts.js" />
+    <Content Include="Echat\js\avgrund.js" />
+    <Content Include="Echat\js\bootstrap-table.js" />
+    <Content Include="Echat\js\bt-maxLength.js" />
+    <Content Include="Echat\js\c3.js" />
+    <Content Include="Echat\js\calendar.js" />
+    <Content Include="Echat\js\chart.js" />
+    <Content Include="Echat\js\chartist.js" />
+    <Content Include="Echat\js\circle-progress.js" />
+    <Content Include="Echat\js\clipboard.js" />
+    <Content Include="Echat\js\codeEditor.js" />
+    <Content Include="Echat\js\codemirror.js" />
+    <Content Include="Echat\js\context-menu.js" />
+    <Content Include="Echat\js\dashboard.js" />
+    <Content Include="Echat\js\data-table.js" />
+    <Content Include="Echat\js\db.js" />
+    <Content Include="Echat\js\demo.js" />
+    <Content Include="Echat\js\desktop-notification.js" />
+    <Content Include="Echat\js\dragula.js" />
+    <Content Include="Echat\js\dropify.js" />
+    <Content Include="Echat\js\dropzone.js" />
+    <Content Include="Echat\js\editorDemo.js" />
+    <Content Include="Echat\js\file-upload.js" />
+    <Content Include="Echat\js\flot-chart.js" />
+    <Content Include="Echat\js\form-addons.js" />
+    <Content Include="Echat\js\form-repeater.js" />
+    <Content Include="Echat\js\form-validation.js" />
+    <Content Include="Echat\js\formpickers.js" />
+    <Content Include="Echat\js\google-charts.js" />
+    <Content Include="Echat\js\google-maps.js" />
+    <Content Include="Echat\js\hoverable-collapse.js" />
+    <Content Include="Echat\js\ion-range-slider.js" />
+    <Content Include="Echat\js\jq.tablesort.js" />
+    <Content Include="Echat\js\jquery-file-upload.js" />
+    <Content Include="Echat\js\js-grid.js" />
+    <Content Include="Echat\js\just-gage.js" />
+    <Content Include="Echat\js\light-gallery.js" />
+    <Content Include="Echat\js\listify.js" />
+    <Content Include="Echat\js\mapael.js" />
+    <Content Include="Echat\js\mapael_example_1.js" />
+    <Content Include="Echat\js\mapael_example_2.js" />
+    <Content Include="Echat\js\maps.js" />
+    <Content Include="Echat\js\modal-demo.js" />
+    <Content Include="Echat\js\morris.js" />
+    <Content Include="Echat\js\no-ui-slider.js" />
+    <Content Include="Echat\js\off-canvas.js" />
+    <Content Include="Echat\js\owl-carousel.js" />
+    <Content Include="Echat\js\paginate.js" />
+    <Content Include="Echat\js\popover.js" />
+    <Content Include="Echat\js\profile-demo.js" />
+    <Content Include="Echat\js\progress-bar.js" />
+    <Content Include="Echat\js\rickshaw.js" />
+    <Content Include="Echat\js\select2.js" />
+    <Content Include="Echat\js\settings.js" />
+    <Content Include="Echat\js\sparkline.js" />
+    <Content Include="Echat\js\tablesorter.js" />
+    <Content Include="Echat\js\tabs.js" />
+    <Content Include="Echat\js\template.js" />
+    <Content Include="Echat\js\tight-grid.js" />
+    <Content Include="Echat\js\toastDemo.js" />
+    <Content Include="Echat\js\todolist.js" />
+    <Content Include="Echat\js\tooltips.js" />
+    <Content Include="Echat\js\typeahead.js" />
+    <Content Include="Echat\js\wizard.js" />
+    <Content Include="Echat\js\x-editable.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="frontend\assets\boostarp\bootstrap.bundle.min.js" />
+    <Content Include="frontend\assets\boostarp\bootstrap.min.css" />
+    <Content Include="frontend\assets\css\style.css" />
+    <Content Include="frontend\assets\img\1.jpeg" />
+    <Content Include="frontend\assets\img\2.jpeg" />
+    <Content Include="frontend\assets\img\3.jpeg" />
+    <Content Include="frontend\assets\img\4.jpeg" />
+    <Content Include="frontend\assets\img\5.jpeg" />
+    <Content Include="frontend\assets\img\6.jpeg" />
+    <Content Include="frontend\assets\img\bardai.png" />
+    <Content Include="frontend\assets\img\chatgpt.png" />
+    <Content Include="frontend\assets\img\copilot.jpg" />
+    <Content Include="frontend\assets\img\dalle2.jpeg" />
+    <Content Include="frontend\assets\img\Descriptai.png" />
+    <Content Include="frontend\assets\img\logo.jpg" />
+    <Content Include="frontend\assets\img\logo1.png" />
+    <Content Include="frontend\assets\img\sliddr3.jpg" />
+    <Content Include="frontend\assets\img\slide11.jpg" />
+    <Content Include="frontend\assets\img\slide12.jpg" />
+    <Content Include="frontend\assets\img\slide2.jpeg" />
+    <Content Include="frontend\assets\img\slide3.jpg" />
+    <Content Include="frontend\assets\img\slider1.jpg" />
+    <Content Include="frontend\assets\img\slider2.jpg" />
+    <Content Include="frontend\assets\img\synthesiaai.jpg" />
+    <Content Include="frontend\assets\img\tutor1.jpg" />
+    <Content Include="frontend\assets\js\js.js" />
+    <Content Include="frontend\index.html" />
+    <Content Include="Global.asax" />
+    <Content Include="loginPage\Images\AI logo.jpg" />
+    <Content Include="loginPage\Images\aiImage.png" />
+    <Content Include="loginPage\Images\AI_BackgroundImg.jpg" />
+    <Content Include="loginPage\Images\backImg.jpg" />
+    <Content Include="loginPage\Images\frontImg.jpg" />
+    <Content Include="loginPage\Images\slide3.jpg" />
+    <Content Include="loginPage\Images\tutor1.jpg" />
+    <Content Include="loginPage\login.aspx" />
+    <Content Include="loginPage\style.css" />
+    <Content Include="quiz\css\vertical-layout-light\style.css" />
+    <Content Include="quiz\exam.aspx" />
+    <Content Include="quiz\js\ace.js" />
+    <Content Include="quiz\js\alerts.js" />
+    <Content Include="quiz\js\avgrund.js" />
+    <Content Include="quiz\js\bootstrap-table.js" />
+    <Content Include="quiz\js\bt-maxLength.js" />
+    <Content Include="quiz\js\c3.js" />
+    <Content Include="quiz\js\calendar.js" />
+    <Content Include="quiz\js\chart.js" />
+    <Content Include="quiz\js\chartist.js" />
+    <Content Include="quiz\js\circle-progress.js" />
+    <Content Include="quiz\js\clipboard.js" />
+    <Content Include="quiz\js\codeEditor.js" />
+    <Content Include="quiz\js\codemirror.js" />
+    <Content Include="quiz\js\context-menu.js" />
+    <Content Include="quiz\js\dashboard.js" />
+    <Content Include="quiz\js\data-table.js" />
+    <Content Include="quiz\js\db.js" />
+    <Content Include="quiz\js\demo.js" />
+    <Content Include="quiz\js\desktop-notification.js" />
+    <Content Include="quiz\js\dragula.js" />
+    <Content Include="quiz\js\dropify.js" />
+    <Content Include="quiz\js\dropzone.js" />
+    <Content Include="quiz\js\editorDemo.js" />
+    <Content Include="quiz\js\file-upload.js" />
+    <Content Include="quiz\js\flot-chart.js" />
+    <Content Include="quiz\js\form-addons.js" />
+    <Content Include="quiz\js\form-repeater.js" />
+    <Content Include="quiz\js\form-validation.js" />
+    <Content Include="quiz\js\formpickers.js" />
+    <Content Include="quiz\js\google-charts.js" />
+    <Content Include="quiz\js\google-maps.js" />
+    <Content Include="quiz\js\hoverable-collapse.js" />
+    <Content Include="quiz\js\ion-range-slider.js" />
+    <Content Include="quiz\js\jq.tablesort.js" />
+    <Content Include="quiz\js\jquery-file-upload.js" />
+    <Content Include="quiz\js\js-grid.js" />
+    <Content Include="quiz\js\just-gage.js" />
+    <Content Include="quiz\js\light-gallery.js" />
+    <Content Include="quiz\js\listify.js" />
+    <Content Include="quiz\js\mapael.js" />
+    <Content Include="quiz\js\mapael_example_1.js" />
+    <Content Include="quiz\js\mapael_example_2.js" />
+    <Content Include="quiz\js\maps.js" />
+    <Content Include="quiz\js\modal-demo.js" />
+    <Content Include="quiz\js\morris.js" />
+    <Content Include="quiz\js\no-ui-slider.js" />
+    <Content Include="quiz\js\off-canvas.js" />
+    <Content Include="quiz\js\owl-carousel.js" />
+    <Content Include="quiz\js\paginate.js" />
+    <Content Include="quiz\js\popover.js" />
+    <Content Include="quiz\js\profile-demo.js" />
+    <Content Include="quiz\js\progress-bar.js" />
+    <Content Include="quiz\js\rickshaw.js" />
+    <Content Include="quiz\js\select2.js" />
+    <Content Include="quiz\js\settings.js" />
+    <Content Include="quiz\js\sparkline.js" />
+    <Content Include="quiz\js\tablesorter.js" />
+    <Content Include="quiz\js\tabs.js" />
+    <Content Include="quiz\js\template.js" />
+    <Content Include="quiz\js\tight-grid.js" />
+    <Content Include="quiz\js\toastDemo.js" />
+    <Content Include="quiz\js\todolist.js" />
+    <Content Include="quiz\js\tooltips.js" />
+    <Content Include="quiz\js\typeahead.js" />
+    <Content Include="quiz\js\wizard.js" />
+    <Content Include="quiz\js\x-editable.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="loginPage\Images\Ai.avif" />
+    <Content Include="Website\css\vertical-layout-light\style.css" />
+    <Content Include="Website\index.html" />
+    <Content Include="Website\js\ace.js" />
+    <Content Include="Website\js\alerts.js" />
+    <Content Include="Website\js\avgrund.js" />
+    <Content Include="Website\js\bootstrap-table.js" />
+    <Content Include="Website\js\bt-maxLength.js" />
+    <Content Include="Website\js\c3.js" />
+    <Content Include="Website\js\calendar.js" />
+    <Content Include="Website\js\chart.js" />
+    <Content Include="Website\js\chartist.js" />
+    <Content Include="Website\js\circle-progress.js" />
+    <Content Include="Website\js\clipboard.js" />
+    <Content Include="Website\js\codeEditor.js" />
+    <Content Include="Website\js\codemirror.js" />
+    <Content Include="Website\js\context-menu.js" />
+    <Content Include="Website\js\dashboard.js" />
+    <Content Include="Website\js\data-table.js" />
+    <Content Include="Website\js\db.js" />
+    <Content Include="Website\js\demo.js" />
+    <Content Include="Website\js\desktop-notification.js" />
+    <Content Include="Website\js\dragula.js" />
+    <Content Include="Website\js\dropify.js" />
+    <Content Include="Website\js\dropzone.js" />
+    <Content Include="Website\js\editorDemo.js" />
+    <Content Include="Website\js\file-upload.js" />
+    <Content Include="Website\js\flot-chart.js" />
+    <Content Include="Website\js\form-addons.js" />
+    <Content Include="Website\js\form-repeater.js" />
+    <Content Include="Website\js\form-validation.js" />
+    <Content Include="Website\js\formpickers.js" />
+    <Content Include="Website\js\google-charts.js" />
+    <Content Include="Website\js\google-maps.js" />
+    <Content Include="Website\js\hoverable-collapse.js" />
+    <Content Include="Website\js\ion-range-slider.js" />
+    <Content Include="Website\js\jq.tablesort.js" />
+    <Content Include="Website\js\jquery-file-upload.js" />
+    <Content Include="Website\js\js-grid.js" />
+    <Content Include="Website\js\just-gage.js" />
+    <Content Include="Website\js\light-gallery.js" />
+    <Content Include="Website\js\listify.js" />
+    <Content Include="Website\js\mapael.js" />
+    <Content Include="Website\js\mapael_example_1.js" />
+    <Content Include="Website\js\mapael_example_2.js" />
+    <Content Include="Website\js\maps.js" />
+    <Content Include="Website\js\modal-demo.js" />
+    <Content Include="Website\js\morris.js" />
+    <Content Include="Website\js\no-ui-slider.js" />
+    <Content Include="Website\js\off-canvas.js" />
+    <Content Include="Website\js\owl-carousel.js" />
+    <Content Include="Website\js\paginate.js" />
+    <Content Include="Website\js\popover.js" />
+    <Content Include="Website\js\profile-demo.js" />
+    <Content Include="Website\js\progress-bar.js" />
+    <Content Include="Website\js\rickshaw.js" />
+    <Content Include="Website\js\select2.js" />
+    <Content Include="Website\js\settings.js" />
+    <Content Include="Website\js\sparkline.js" />
+    <Content Include="Website\js\tablesorter.js" />
+    <Content Include="Website\js\tabs.js" />
+    <Content Include="Website\js\template.js" />
+    <Content Include="Website\js\tight-grid.js" />
+    <Content Include="Website\js\toastDemo.js" />
+    <Content Include="Website\js\todolist.js" />
+    <Content Include="Website\js\tooltips.js" />
+    <Content Include="Website\js\typeahead.js" />
+    <Content Include="Website\js\wizard.js" />
+    <Content Include="Website\js\x-editable.js" />
+    <Content Include="Website\tutorial.aspx" />
+    <Content Include="Dashboard\admin.Master" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-Black.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-BlackItalic.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-Bold.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-BoldItalic.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-Book.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-BookItalic.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-Medium.woff" />
+    <Content Include="Dashboard\assets\fonts\CircularStd-MediumItalic.woff" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400-1.eot" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400.eot" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400.ttf" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400.woff" />
+    <Content Include="Dashboard\assets\fonts\la-brands-400.woff2" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400-1.eot" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400.eot" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400.ttf" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400.woff" />
+    <Content Include="Dashboard\assets\fonts\la-regular-400.woff2" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900-1.eot" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900.eot" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900.ttf" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900.woff" />
+    <Content Include="Dashboard\assets\fonts\la-solid-900.woff2" />
+    <Content Include="Dashboard\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Dashboard\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Dashboard\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Dashboard\assets\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Dashboard\assets\plugins\fontawesome\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="quiz\css\maps\horizontal-layout-dark\style.css.map" />
+    <Content Include="quiz\css\maps\horizontal-layout-light\style.css.map" />
+    <Content Include="quiz\css\maps\horizontal-layout\style.css.map" />
+    <Content Include="quiz\css\maps\vertical-layout-dark\style.css.map" />
+    <Content Include="quiz\css\maps\vertical-layout-light\style.css.map" />
+    <Content Include="quiz\Website.zip" />
+    <Content Include="frontend\assets\img\slide1.webp" />
+    <Content Include="Echat\css\maps\horizontal-layout-dark\style.css.map" />
+    <Content Include="Echat\css\maps\horizontal-layout-light\style.css.map" />
+    <Content Include="Echat\css\maps\horizontal-layout\style.css.map" />
+    <Content Include="Echat\css\maps\vertical-layout-dark\style.css.map" />
+    <Content Include="Echat\css\maps\vertical-layout-light\style.css.map" />
+    <Content Include="Echat\Website.zip" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Website\css\maps\horizontal-layout-dark\style.css.map" />
+    <Content Include="Website\css\maps\horizontal-layout-light\style.css.map" />
+    <Content Include="Website\css\maps\horizontal-layout\style.css.map" />
+    <Content Include="Website\css\maps\vertical-layout-dark\style.css.map" />
+    <Content Include="Website\css\maps\vertical-layout-light\style.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\addquestion.aspx.cs">
+      <DependentUpon>addquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\addquestion.aspx.designer.cs">
+      <DependentUpon>addquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\changepassword.aspx.designer.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\addsubjectcontent.aspx.cs">
+      <DependentUpon>addsubjectcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\addsubjectcontent.aspx.designer.cs">
+      <DependentUpon>addsubjectcontent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\changepasswordold.aspx.cs">
+      <DependentUpon>changepasswordold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\changepasswordold.aspx.designer.cs">
+      <DependentUpon>changepasswordold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\myprofile.aspx.cs">
+      <DependentUpon>myprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\myprofile.aspx.designer.cs">
+      <DependentUpon>myprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\progressreport.aspx.cs">
+      <DependentUpon>progressreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\progressreport.aspx.designer.cs">
+      <DependentUpon>progressreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\result.aspx.cs">
+      <DependentUpon>result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\result.aspx.designer.cs">
+      <DependentUpon>result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\viewprofile.aspx.cs">
+      <DependentUpon>viewprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\viewprofile.aspx.designer.cs">
+      <DependentUpon>viewprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\viewquestion.aspx.cs">
+      <DependentUpon>viewquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\viewquestion.aspx.designer.cs">
+      <DependentUpon>viewquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\viewregularization.aspx.cs">
+      <DependentUpon>viewregularization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\viewregularization.aspx.designer.cs">
+      <DependentUpon>viewregularization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\viewupdatequestion.aspx.cs">
+      <DependentUpon>viewupdatequestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\viewupdatequestion.aspx.designer.cs">
+      <DependentUpon>viewupdatequestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\viewupdatesubjectcontent.aspx.cs">
+      <DependentUpon>viewupdatesubjectcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\viewupdatesubjectcontent.aspx.designer.cs">
+      <DependentUpon>viewupdatesubjectcontent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Echat\aichatbot.aspx.cs">
+      <DependentUpon>aichatbot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Echat\aichatbot.aspx.designer.cs">
+      <DependentUpon>aichatbot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="loginPage\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginPage\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quiz\exam.aspx.cs">
+      <DependentUpon>exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quiz\exam.aspx.designer.cs">
+      <DependentUpon>exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Website\tutorial.aspx.cs">
+      <DependentUpon>tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website\tutorial.aspx.designer.cs">
+      <DependentUpon>tutorial.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49933</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44342/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
