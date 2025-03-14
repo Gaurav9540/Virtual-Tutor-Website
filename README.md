@@ -4,6 +4,9 @@ The AI-Based Virtual Tutor Website is an intelligent online platform designed to
 # 🚀 Project Overview
 The AI-Based Virtual Tutor Website is designed to simulate the role of a human tutor by analyzing the user’s progress and customizing the content accordingly. The platform supports a wide range of subjects, provides instant feedback, and helps users improve through adaptive learning techniques. The intelligent recommendation system ensures that learners receive targeted and effective study material.
 
+![Banking System](assests/AI-1.jpg)
+![Banking System](assests/AI-2.jpg)
+
 # 📦 Key Features
 ✅ User Authentication & Profile Management – Secure user registration, login, and profile management.
 
