@@ -18,11 +18,15 @@ The AI-Based Virtual Tutor Website is designed to simulate the role of a human t
 ✅ Multimedia Learning – Supports text, video, and interactive content.
 
 # 🎯 Key Achievements
-✔️ Developed an AI-based recommendation engine to personalize learning paths.
-✔️ Implemented real-time feedback and adaptive difficulty adjustment using machine learning algorithms.
-✔️ Designed a responsive and user-friendly interface for better user experience.
-✔️ Ensured data security through proper authentication and authorization mechanisms.
-✔️ Optimized system performance by reducing latency and improving server response time.
+✔️ Developed an AI-based recommendation engine to personalize learning paths. <br>
+
+✔️ Implemented real-time feedback and adaptive difficulty adjustment using machine learning algorithms. <br>
+
+✔️ Designed a responsive and user-friendly interface for better user experience. <br>
+ 
+✔️ Ensured data security through proper authentication and authorization mechanisms. <br>
+
+✔️ Optimized system performance by reducing latency and improving server response time. <br>
 
 # 💡 Impact
 The AI-Based Virtual Tutor Website empowers learners to improve their knowledge efficiently by offering a personalized and engaging learning experience. The adaptive AI engine ensures that each user gets the most suitable learning material, promoting better understanding and faster progress.
